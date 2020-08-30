@@ -2062,7 +2062,7 @@ function crearEnemyWoman () {
     enemyWoman1.y = 50
     enemyWomanX = womanEnemyLimiteX
     directionWoman = 1
-    enemyWoman1.ay = 210
+    enemyWoman1.ay = 200
     enemyWoman1.setFlag(SpriteFlag.BounceOnWall, true)
     enemyWoman1.vx = -80
     animation.setAction(enemyWoman1, ActionKind.womanEnemyWalking)
@@ -2560,7 +2560,7 @@ game.onUpdate(function () {
         game.over(false)
         music.wawawawaa.play()
     }
-    if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile109) || Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile93)) {
+    if (Prima_Nº1.tileKindAt(TileDirection.Bottom, myTiles.tile80)) {
         info.changeLifeBy(-3)
         game.over(false)
         music.wawawawaa.play()
